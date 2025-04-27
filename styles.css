@@ -1,0 +1,226 @@
+.container{
+   background-color: #000000db;
+   color: #f8eedf;
+   font-family:  Roboto;
+   padding: 10px;
+   
+}
+
+.nav-menu{
+ display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.nav-menu li{
+  display: inline;
+  margin: 10px;
+  padding: 5px 10px;
+  line-height: 2rem;
+}
+
+.ulist{
+  list-style-type: none;
+  
+}
+.ulist a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: roboto;
+  color: #e8c999;
+  letter-spacing: 2px;
+  
+}
+.ulist a:hover{
+  color: rgba(231, 199, 151, 0.655);
+}
+
+.h-line{
+  border: 1px solid #8e1616;
+}
+
+h1{
+  color: #e8c999;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: medium;
+  letter-spacing: 2px;
+}
+.text-div > h4{
+  color: #e8c999;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+#about, #work, #resume, #contact{
+  padding: 15px;
+  margin-bottom: 5px;
+}
+.heading{
+  justify-items: center;
+}
+
+.text-img-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+  
+.text-div{
+align-self: flex-start;
+margin-left: 5px;
+margin-right: 10px;
+}
+.text-div p, li{
+  line-height: 25px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.img-div{
+align-self: center;
+margin-left: 5px;
+}
+
+img{
+width: 200px;
+
+}
+
+.ulist2{
+  list-style-type: circle;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience1, .experience2{
+  align-self: flex-start;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  line-height: 2;
+  word-spacing: 2px;
+  
+}
+
+.experience3{
+  align-self: flex-start;
+  margin-left: 25px;
+  line-height: 2;
+}
+
+.italicize{
+  font-style: oblique;
+}
+
+.ulist2 li{
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.resume-div, .audio-div{
+  margin-top: 5px;
+  margin-left: 25px;
+  padding: 20px;
+}
+.resume-div > h4{
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.resume-div a{
+  font-size: 14px;
+  text-decoration: none;
+  color: #f8eedf;
+  border: 1px solid #8e1616;
+  border-width: 5px;
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.resume-div a:hover{
+  background-color: #f8eedf;
+  color: #8e1616;
+  border: 1px solid ;
+  border-width: 5px;
+  border-radius: 50px;
+  font-size: 16px;
+}
+.audio-div > h4{
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+#resume, #contact{
+  justify-items: center;
+}
+#contact .heading{
+  margin-bottom: 50px;
+}
+.contact-form{
+  width: 500px;
+  background-color: #f8eedf;
+  border: 1px solid #8e1616;
+  border-width: 2px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 25px;
+  padding: 20px; 
+}
+
+.contact-form label{
+  margin-right: 15px;
+}
+.contact-form div{
+padding: 4px;
+display: flex;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+.contact-form button{
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 8px 35px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #8e1616;
+  border-width: 2px;
+  border-radius: 5px;
+  box-shadow: 5px 3px #00000071
+}
+
+.contact-form label{
+  color: #000000db;
+}
+.contact-form input, select{
+  padding: 5px;
+  border: 1px solid #8e1616;
+  border-width: 2px;
+  border-radius: 5px;
+  box-shadow: 5px 3px #00000071;
+}
+
+main{
+  margin-bottom: 50px;
+}
+
+.footer-nav{
+  display: flex;
+  padding: 15px;
+}
+
+.location, .telephone{
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+.copy-right{
+  justify-items: center;
+}

@@ -3,39 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <title>My portfolio</title>
 </head>
-<body>
+
+<body class="container">
   <header>
-    <nav>
-      <ul style="list-style-type: none;">
-        <li> <a href="">Home</a> </li>
+    <nav class="nav-menu">
+      <ul class="ulist">
+        <li> <a href="#home">Home</a> </li>
         <li> <a href="#about">About</a> </li>
         <li> <a href="#work">Work</a> </li>
         <li> <a href="#resume">Resume</a> </li>
-        <li> <a href="#contact">contact</a> </li>  
+        <li> <a href="#contact">Contact</a> </li>  
       </ul>
     </nav>
-  
   </header>
 
   <!--I used horizontal rule to seperate the header form the main-->
-  <hr>
+  <hr class="h-line">
 
   <main>
 
     <!--This is about me section-->
+
     <section id="about">
-      <h1>About Me</h1>
-      <div style="display: flex;">
-        <div>
-          <p>
+      <div class="heading">
+        <h1>About Me</h1>
+      </div>
+      <div class="text-img-div">
+        <div class="text-div">
+          <p class="para1">
             My name is Ifunanya Maureen Ani, I am a tech enthusiast, software developer, wordpress designer and Facebook Ads specialist.
           </p>
-          <p>
-            I started developing interest in web development after I designed a landing page with WorPress for my business to run an advert on Facebook. Upon research, I was intrigued by how much I could do with coding, and here am I today doing so much as a software developer.
+          <p class="para2">
+            I started developing interest in web development after I designed a landing page with WordPress for my business to run an advert on Facebook. Upon research, I was intrigued by how much I could do with coding, and here am I today doing so much as a software developer.
           </p>
-          <i>Professional Summary:</i>
+          <h4>Professional Summary:</h4>
           <p>
             <ul>
               <li>
@@ -58,109 +65,124 @@
             </ul>
           </p>
         </div>
-        <div>
-          <img src="IMA_5624.jpg" width="100%" height="100%" alt="head-shot">
+        <div class="img-div">
+          <img src="IMA_5624.jpg" alt="my-head-shot">
         </div>
-        
       </div>
     </section>
 
     <!--This is work section-->
+
     <section id="work">
-      <h1>Work Experience</h1> 
-      <ul style="list-style-type: lower-roman;">
-        <div>
+      <div class="heading">
+        <h1>Work Experience</h1>
+      </div>
+      <!--I used 3 divs inside ul to seperate each work experience-->
+      <ul class="ulist2">
+        <div class="experience1">
           <li>
-            <i>Login Stores Ikeja, Lagos State.</i> <br>
-            <b>Web developer (Front-end)</b>
-            <br> August 2023 – May 2024 
+            <span class="italicize">Login Stores Ikeja, Lagos State.</span><br>
+              Web developer (Front-end) <br>
+             August 2023 &hyphen; May 2024 
           </li>
         </div>
         
-        <div>
+        <div class="experience2">
           <li>
-            <i>Pixzy Land Ikeja, Lagos State.</i> <br>
-            <b>Web developer (Front-end)</b>
-            <br> March 2022 – May 2024 
+            <span class="italicize">Pixzy Land Ikeja, Lagos State.</span><br>
+           Web developer (Front-end)
+            <br> March 2022 &hyphen; May 2024 
           </li>
         </div>
         
-        <div>
+        <div class="experience3">
           <li>
-            <i>Albasolar Africa Ajah, Lagos State.</i> <br>
-            <b>WordPress developer</b>
-            <br> March 2022 – April 2024 
+            <span class="italicize">Albasolar Africa Ajah, Lagos State.</span><br>
+            WordPress developer <br> 
+            March 2022 &hyphen; April 2024 
           </li>
         </div>
       </ul>
-     
     </section>
 
     <!--this is resume section-->
     <section id="resume">
-      <h1>My Resume</h1>
-      <div>
-        <h4>
-          Click the link to my resume below to learn more about me.
-        </h4> 
-        <a href="Web Dev Resume 2.pdf" target="_blank">View my resume</a>
+      <div class="heading">
+        <h1>My Resume</h1>
       </div>
-     
       <div>
-        <audio src="WhatsApp Audio 1.opus"  controls></audio>
+        <div class="resume-div">
+          <h4>
+            Click the link to my resume below to learn more about me.
+          </h4> 
+          <a href="Web Dev Resume 2.pdf" target="_blank"> My Resume</a>
+        </div>
+        
+        <div class="audio-div">
+          <h4>
+            Listen to me talk about myself.
+          </h4> 
+          <audio src="WhatsApp Audio 1.opus" controls></audio>
+        </div>
       </div>
-
-      </audio>
-
     </section>
   
     <section id="contact">
-      <h1>Get In Touch</h1>
-      <form action="" method="">
-        <p >
+      <div class="heading">
+        <h1>Get In Touch</h1>
+      </div>
+      <form action="post" method="submit"      class="contact-form">
+        <div>
           <label for="name">Full Name</label>
           <input type="text">
-        </p>
-        <p>
+        </div>
+        
+        <div>
           <label for="location">Country</label>
-          <select name="" id="">
-            <option value="">Nigeria</option>
-            <option value="">Canada</option>
-            <option value="">United Kingdom</option>
-            <option value="">Germany</option>
-            <option value="">Finland</option>
-            <option value="">Russia</option>
-            <option value="">United States</option>
+          <select name="country" id="">
+            <option value="Nigeria">Nigeria</option>
+            <option value="Canada">Canada</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Germany">Germany</option>
+            <option value="Finland">Finland</option>
+            <option value="Russia">Russia</option>
+            <option value="Unites States">United States</option>
           </select>
-        </p>
-        <p>
+        </div>
+        
+        <div>
           <label for="phone number"> Phone Number</label>
           <input type="number">
-        </p>
-        <p>
-          <button type="submit">Submit</button>
-        </p>
+        </div>
+      
+        <button type="submit">Submit</button>
+          
       </form>
     </section>
   </main>
 
   <!--I used horizontal rule to seperate the main form the footer-->
-  <hr>
+  <hr class="h-line">
+
   <footer>
     <div>
-      <table>
-        <tr>
-          <th>Location</th>
-          <th>Telephone</th>
-        </tr>
-        <tr>
-          <td>123 John Street Ikeja</td>
-          <td>12345677890</td>
-        </tr>
-      </table>
+      <nav class="footer-nav">
+        <div class="location">
+          <h3>Location</h3>
+          <p>
+            123 John Street Ikeja, Lagos State.
+          </p>
+        </div>
+        <div class="telephone">
+          <h3>Telephone</h3>
+          <p>
+            12345677890
+          </p>
+        </div>
+      </nav>
     </div>
-    <div>
-      <small>Designed by &copy;Aify2025</small> 
+    <div class="copy-right">
+      <p><small>Designed by &copy; Aify2025</small> </p>
     </div>
   </footer>
 </body>
